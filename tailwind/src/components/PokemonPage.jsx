@@ -27,6 +27,7 @@ export default function PokemonPage(){
     return(
         <div className="max-w-md mx-auto p-4 text-center">
             <h1 className="text-3xl font bold capitalize mb-4">{pokemon.name}</h1>
+                <button onClick={()=>navigate(-1)} className="mt-6 bg-red-600 hover:bg-red-700 text-black">Volver</button>
         </div>
     )
 }

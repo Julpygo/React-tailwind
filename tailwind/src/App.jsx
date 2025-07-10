@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {Route, Routes} from "react-router-dom"
 import PokemonList from './components/PokemonList'
+import PokemonPage from './components/PokemonPage'
 
 function App() {
 
   return (
-    <>
-        <PokemonList/>
-    </>
+    <Routes>
+        <Route path="/" element={<PokemonList/>}/>
+        <Route path="/pokemon/:name" element = {<PokemonPage/>}/>
+    </Routes>
   )
 }
 
